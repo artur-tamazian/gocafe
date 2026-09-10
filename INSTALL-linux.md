@@ -123,3 +123,7 @@ Delete the file. If you added a menu entry by hand, remove
 `~/.local/share/applications/gocafe.desktop` too. To also clear your settings,
 delete `~/.local/share/app.gocafe.gocafe/` and `~/.cache/app.gocafe.gocafe/`;
 your saved logins live in the keyring, under `app.gocafe.gocafe`.
+
+---
+
+*Generated from the Go Cafe source repository — edits made here are overwritten at the next release.*

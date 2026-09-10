@@ -147,3 +147,7 @@ Explorer address bar and attach the file to your report:
 
 It records the app's conversation with the Go server for the current session. It
 does not contain your password.
+
+---
+
+*Generated from the Go Cafe source repository — edits made here are overwritten at the next release.*

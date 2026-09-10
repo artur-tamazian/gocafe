@@ -143,3 +143,7 @@ storage use at all, and the app asks for a single permission, `INTERNET`.
 
 Long-press the icon → **Uninstall**, or **Settings → Apps → Go Cafe →
 Uninstall**. Nothing is left behind.
+
+---
+
+*Generated from the Go Cafe source repository — edits made here are overwritten at the next release.*
