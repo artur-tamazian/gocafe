@@ -16,22 +16,27 @@ or drag it to the Trash. (You are ejecting the image, not deleting the app.)
 
 ## 3. First launch — the important bit
 
-**Do not double-click the app the first time.** If you do, macOS says
+Double-click **Go Cafe**. macOS blocks it and says
 
 > "Go Cafe" can't be opened because Apple cannot check it for malicious software.
 
 and offers you only **Move to Trash** or **Cancel**. Click **Cancel** — nothing
-is wrong with the app, and the next step is the way past it.
+is wrong with the app, and this is the step that gets past it:
 
-Instead, open it this way the first time:
-
-1. Open your **Applications** folder.
-2. **Right-click** (or Control-click) **Go Cafe**.
-3. Choose **Open** from the menu that appears.
-4. You get a similar warning, but this time there is an **Open** button. Click it.
+1. Open **System Settings → Privacy & Security**.
+2. Scroll to the bottom. There is a line about Go Cafe being blocked, with an
+   **Open Anyway** button next to it.
+3. Click **Open Anyway**, then confirm.
 
 That is it. From then on Go Cafe opens normally with a double-click — you only
 need to do this once.
+
+### On macOS 14 (Sonoma) and earlier
+
+Older macOS has a shortcut for this that Apple has since removed. Instead of
+System Settings: **right-click** (or Control-click) Go Cafe in Applications,
+choose **Open**, and click **Open** again in the warning. Everything else is the
+same.
 
 ## Why does macOS warn me?
 
@@ -40,9 +45,9 @@ annual fee for one, and this build is an early test version, so it does not have
 one. macOS shows the same warning for any app it has not seen notarised by
 Apple, regardless of whether the app is fine.
 
-Right-clicking and choosing **Open** is macOS's own built-in way of saying "yes,
-I know where this came from, let it run." It does not disable any security
-setting on your Mac, and it applies only to this one app.
+**Open Anyway** is macOS's own built-in way of saying "yes, I know where this
+came from, let it run." It does not disable any security setting on your Mac,
+and it applies only to this one app.
 
 ## Anything not working?
 
@@ -63,9 +68,14 @@ retry step 3. If it persists, run this in Terminal and try once more:
 xattr -dr com.apple.quarantine "/Applications/Go Cafe.app"
 ```
 
-**The Open option does not appear when I right-click.**
-Make sure you are right-clicking the app in **Applications**, not inside the
-still-mounted disk image.
+**There is no Go Cafe line in Privacy & Security.**
+It only appears after macOS has blocked a launch, and it clears itself after a
+while. Try to open the app once more, then look again — the line should be at
+the bottom of the page, under **Security**.
+
+Make sure you are opening the app from **Applications**, not from the
+still-mounted disk image; a blocked launch from inside the image does not always
+produce the line.
 
 **It opens but cannot reach a server.**
 Check that you are online, then confirm no VPN or corporate firewall is blocking
@@ -76,13 +86,6 @@ not over plain web traffic, and some restrictive networks block that.
 
 - macOS 10.15 or newer
 - Works on both Apple Silicon and Intel Macs
-
-## On macOS 15 (Sequoia) and later
-
-Apple removed the right-click → Open shortcut. Step 3 above is therefore
-different: launch the app normally, let macOS block it, then go to
-**System Settings → Privacy & Security**, scroll to the bottom, and click
-**Open Anyway** next to the message about Go Cafe. Everything else is the same.
 
 ## Reporting problems
 
