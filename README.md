@@ -4,8 +4,8 @@ A native client for playing Go — Baduk, Weiqi — online, on
 [Fox (foxwq)](https://www.foxwq.com/). Board, clocks, lobby and history, without
 a browser.
 
-These are test builds. They work, they're unfinished, and they're not in any app
-store — which your computer will have opinions about. See below.
+Go Cafe isn't in any app store, and isn't signed yet — which your computer will
+have opinions about. See below.
 
 ## Download
 
@@ -23,13 +23,14 @@ Older than that and it won't start. Android is one APK for every device.
 
 ## Your computer will warn you
 
-Nothing was found in the app. The warning means nobody has paid to vouch for it,
-which is a different thing — signing certificates cost money and this is a test
-build.
+Nothing is wrong with the app. The warning means nobody has paid to vouch for it,
+which is a different thing — signing certificates cost money, and Go Cafe isn't
+signed yet.
 
 - **macOS** — *"Apple cannot check it for malicious software"*, offering only
-  Move to Trash. Right-click the app, choose **Open**, and the same dialog comes
-  back with an **Open** button.
+  Move to Trash. Click **Cancel**, then open **System Settings → Privacy &
+  Security**, scroll down and click **Open Anyway**. (On macOS 14 and earlier:
+  right-click the app → **Open** instead.)
 - **Windows** — a blue *"Windows protected your PC"* panel. **More info** →
   **Run anyway**.
 - **Android** — *"Unsafe app blocked"*. **More details** → **Install anyway**.
@@ -53,7 +54,7 @@ catches it in a second.
 
 Open an [issue](../../issues) — what you did, what happened, your platform and
 version. Each guide says where your session log lives; attaching it helps a lot.
-It's a test build, so nothing is too small to report.
+Nothing is too small to report.
 
 ## Credits
 
